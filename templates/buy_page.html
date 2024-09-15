@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Inspired Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7e9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.step {
+    background-color: #a5d6a7;
+    border-radius: 50%;
+    padding: 1em;
+    margin: 1em 0;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+button.circle {
+    background-color: #66bb6a;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button.circle:hover,
+button.circle:active {
+    background-color: red;
+}
+
+.step::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: #4caf50;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step:last-child::after {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Nature-Themed Site</h1>
+    </header>
+    <main>
+        <form action="/touch" method="POST">
+            <section class="step">
+                <button type="submit" name="step" value="1" class="circle">Step 1</button>
+                <p>Description for step 1.</p>
+            </section>
+            <section class="step">
+                <button type="submit" name="step" value="2" class="circle">Step 2</button>
+                <p>Description for step 2.</p>
+            </section>
+            <section class="step">
+                <button type="submit" name="step" value="3" class="circle">Step 3</button>
+                <p>Description for step 3.</p>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

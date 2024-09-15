@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+}
+.oval {
+    width: 35vh;  /* Adjust the size as needed */
+    height: 80px;
+    background-color: #fff1c2;  /* Light gray background */
+    border-radius: 50px;  /* Oval shape */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Center the form container */
+form {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically, if needed */
+    margin: 20px 0; /* Adjust margin as needed */
+    
+}
+#long-box {
+    height: 3000px;
+    color: white;
+}
+.oval-2 {
+    width: 40vh;
+    height: 80px;
+    background: linear-gradient(to right, white, #f97f42);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Mitr";
+    color: black;
+    cursor: pointer;
+    font-size: 50px;
+    margin-top: 0px;
+}
+.greeting {
+    position: relative;
+    text-align: left; /* Aligns text to the left */
+    margin-top: 20px; /* Adjust top margin as needed */
+    left: 20%; /* Moves the text 20% from the left side */
+    transform: translateX(-15%); /* Shifts text to adjust based on left */
+    color: white;
+    max-width: 80%; /* Set a maximum width to prevent text overflow */
+    word-wrap: break-word; /* Ensures long words wrap onto the next line */
+}
+.oval-item {
+    flex: 1; /* Make each item take up equal space */
+    text-align: center;
+}
+.oval-item a {
+    display: block; /* Ensure the links take the full height of their container */
+    width: 100%; /* Make the links fill the item */
+    height: 100%; /* Make the links fill the item */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+.challenge, .shopping, .profile {
+    width: 100%; /* Adjust size as needed */
+    height: 100%; /* Adjust size as needed */
+    background-color: transparent; /* Ensure no background color */
+}
+/* Center the content in the navbar */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.navbar-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;  /* Adjust the height to match your design */
+}
+.green-section {
+    background-image: url("/static/assets/welcome_image.png");
+    background-size: cover;
+    background-position: center;
+    height: 51vh;  /* Adjust the height as needed */
+    width: 100%;
+}
+h1, p {
+    color: white;
+}
+.greeting h1, .greeting p {
+    color: #fff1c2;
+    margin-left: 0; /* Aligns both h1 and p to the same left margin */
+    padding-left: 10px; /* Ensures consistent padding for both */
+    font-family: 'Mitr';
+}
+h1 {
+    font-size: 7.5vh;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 25px;
+    max-width: 80%; /* Limit width of the paragraph */
+    margin: 0 auto; /* Centers the text within the greeting container */; /* Ensures long words break to the next line */
+    padding: 0 10px; /* Optional padding to give space around the text */
+    left: 10%;
+    font-family: mitr;
+}
+.challenge {
+    width: 100x; /* Adjust size as needed */
+    height: 90px; /* Adjust size as needed */
+    background-color: transparent; /* Ensure no background color */
+}
